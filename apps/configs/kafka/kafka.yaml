@@ -18,6 +18,20 @@ spec:
         tls: true
         authentication:
           type: scram-sha-512
+      - name: external
+        port: 9094
+        type: nodeport
+        tls: false
+        overrides:
+          bootstrap:
+            nodePort: 30001
+          brokers:
+          - broker: 0
+            nodePort: 30001
+          - broker: 1
+            nodePort: 30002
+          - broker: 2
+            nodePort: 30003  
     authorization:
       type: simple
     readinessProbe:
