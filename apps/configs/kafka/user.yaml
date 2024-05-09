@@ -22,3 +22,10 @@ spec:
           - Write
           - Delete
         host: "*"
+      - resource:
+          type: group
+          name: console-group
+          patternType: prefix
+        operations:
+          - Read
+        host: "*"        
