@@ -19,7 +19,8 @@ spec:
         operations:
           - Create
           - Describe
-          - Read          
+          - DescribeConfigs # To describe topic
+          - Read # To read message
           - Write
           - Delete
         host: "*"
