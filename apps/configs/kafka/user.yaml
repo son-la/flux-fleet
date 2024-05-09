@@ -24,7 +24,7 @@ spec:
         host: "*"
       - resource:
           type: group
-          name: console-group
+          name: console-consumer-
           patternType: prefix
         operations:
           - Read
