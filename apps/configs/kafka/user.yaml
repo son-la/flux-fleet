@@ -19,6 +19,7 @@ spec:
         operations:
           - Create
           - Describe
+          - Read          
           - Write
           - Delete
         host: "*"
