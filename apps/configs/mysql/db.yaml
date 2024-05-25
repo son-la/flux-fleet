@@ -1,0 +1,13 @@
+apiVersion: mysql.oracle.com/v2
+kind: InnoDBCluster
+metadata:
+  name: snorlax-innodb
+spec:
+  secretName: mypwds
+  instances: 3
+  version: 8.3.0
+  router:
+    instances: 1
+    version: 8.3.0
+  service:
+    type: NodePort

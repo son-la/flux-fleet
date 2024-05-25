@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mypwds
+  namespace: mysql-operator
+type: Opaque
+stringData:
+  rootUser: "root"
+  rootHost: "%%"
+  rootPassword: "publicTesting123"
+# TODO: Change to ESO
