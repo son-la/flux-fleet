@@ -13,3 +13,4 @@ spec:
     version: 8.3.0
   service:
     type: NodePort
+  tlsUseSelfSigned: true
